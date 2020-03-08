@@ -27,6 +27,6 @@ etiquette will create a new output folder and put a new PDF file inside this fol
 etiquette is free software. It is licensed under GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007.
 
 ### Third party components
-No third party components used for now
 
+etiquette is a [bash](https://www.gnu.org/software/bash/) script which uses [ImageMagick®](https://imagemagick.org) to read and create [PDF](https://en.wikipedia.org/wiki/PDF) files.
 
