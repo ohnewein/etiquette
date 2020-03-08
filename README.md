@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2020 Patrick Ohnewein <patrick.ohnewein@lugbz.org>
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
 # etiquette
 Bash script to multiply etiquettes to fill up an A4 page and reduce paper waste
 
