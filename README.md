@@ -7,6 +7,8 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 # etiquette
 Bash script to multiply etiquettes to fill up an A4 page and reduce paper waste
 
+[![REUSE status](https://api.reuse.software/badge/github.com/ohnewein/etiquette)](https://api.reuse.software/info/github.com/ohnewein/etiquette)
+
 ## Table of Contents
 - [Project setup for development](#Project-setup-for-development)
 - [How to execute etiquette](#How-to-execute-etiquette)
