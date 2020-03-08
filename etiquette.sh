@@ -42,21 +42,21 @@ if [ ! -d "$OUTPUT_FOLDER" ]; then
 fi
 
 # for every file passed
-for filename in "$@"; do
+for path in "$@"; do
 
-	echo "convert $filename"
+	echo "convert $path"
 
-	PDF_FILENAME=$filename
-	PDF_TILE_FILENAME=tiles-$PDF_FILENAME
-	output_filename="$OUTPUT_FOLDER/$PDF_TILE_FILENAME"
+	PDF_PATH=$path
+	PDF_TILE_FILENAME=tiles-${path##*/}
+	output_path="$OUTPUT_FOLDER/$PDF_TILE_FILENAME"
 
-	if [ -f $output_filename ]; then
-		echo " skiped existing $output_filename"
+	if [ -f $output_path ]; then
+		echo " skiped existing $output_path"
 	else
 		# duplicate (tile) etiquettes in the PDF
-		convert -density 300 $PDF_FILENAME -duplicate 1 +append -duplicate 3 -append -background white -page A4 $output_filename
+		convert -density 300 $PDF_PATH -duplicate 1 +append -duplicate 3 -append -background white -page A4 $output_path
 
-		echo " -> $output_filename"
+		echo " -> $output_path"
 	fi
 done
 
