@@ -19,9 +19,18 @@ In a bash shell go into the etiquette folder, in which the etiquette.sh bash scr
 ```
 $ cd etiquette
 etiquette$ sh etiquette.sh example/Test-Etiquette.pdf
+convert example/Test-Etiquette.pdf
+ -> ./output/tiles-Test-Etiquette.pdf
 ```
 
-etiquette will create a new output folder and put a new PDF file inside this folder. The created PDF file will contain the image from the source PDF (like Test-Etiquette.pdf) tiled all over the A4 page.
+etiquette will create a folder called output in the actual directory, if it doesn't exist yet, and put the output PDF file inside. 
+
+The created PDF file will contain the image from the source PDF (like Test-Etiquette.pdf) tiled all over the A4 page.
+
+```
+etiquette$ ls output/*
+tiles-Test-Etiquette.pdf
+```
 
 ### Licenses
 etiquette is free software. It is licensed under GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007.
