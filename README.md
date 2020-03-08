@@ -3,6 +3,7 @@ Bash script to multiply etiquettes to fill up an A4 page and reduce paper waste
 
 ## Table of Contents
 - [Project setup for development](#Project-setup-for-development)
+- [How to execute etiquette](#How-to-execute-etiquette)
 - [Licenses](#licenses)
 - [Third party components](#third-party-components)
 
